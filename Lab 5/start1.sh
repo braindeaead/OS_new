@@ -1,10 +1,10 @@
-#!/bin/zsh
+#!/bin/bash
 
 k=$1
 n=$2
 
 for ((counter=0; counter<$k; counter++))
 do
-    zsh newmem.zsh $2&
+    bash newmem.sh $2&
 done
 
