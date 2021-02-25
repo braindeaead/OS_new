@@ -1,0 +1,19 @@
+copy *.bat commands.txt
+md C:\LAB6
+cd C:\LAB6
+
+ver > version.txt
+wmic os get totalphysicalmemory > memory.txt
+wmic os get freephysycalmemory >> memory.txt
+wmic diskdrive get size > disks.txt
+cd C:\LAB6\TEST
+erase version.txt
+erase memory.txt
+erase disks.txt
+md C:\LAB6\TEST
+xcopy C:\LAB6 C:\LAB6\TEST
+
+cd C:\LAB6\TEST
+cd C:\LAB6\TEST
+copy *.txt files.txt
+

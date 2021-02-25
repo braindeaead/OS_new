@@ -1,0 +1,3 @@
+Comparing files service.txt and SERVICE1.TXT
+FC: no differences encountered
+

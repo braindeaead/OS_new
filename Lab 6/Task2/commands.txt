@@ -1,0 +1,10 @@
+fc C:\%ComputerName%\temp\ C:\Windows\
+net share temp=C:\%ComputerName%\temp
+schtasks /delete /tn "task2.second"
+for %I in "C:\Windows" do
+if %~zI GEQ 2097152 
+copy %I "C:\%ComputerName%\temp
+copy *bat commands.txt
+
+schtasks /create /sc minute /tn task2.second /tr C:\OS_new\Lab/ 6\\task2\second.bat
+
